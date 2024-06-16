@@ -1,0 +1,160 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+
+
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta tag -->
+
+
+    <title>form validation</title>
+    <link rel="icon" href="images/favicon.png">
+    
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/media.css">
+    <!-- css links -->
+  </head>
+
+  <!-- body start -->
+  <body>
+
+  <div class="container">
+        <h1 class="text-center">Form validation</h1>
+
+  <!-- form start -->
+  <form class="row g-3 needs-validation" novalidate>
+
+        <div class="col-md-4">
+          <label for="f_name" class="form-label">First name</label>
+          <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter your first name" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+              Please enter your first name.
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="l_name" class="form-label">Last name</label>
+          <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Please enter your last name" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+              Please enter your last name.
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="u_name" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control u_name" id="u_name" name="u_name" placeholder="Please enter your user name" aria-describedby="inputGroupPrepend" required>
+            <div class="valid-feedback">
+            Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control email" id="email" name="email" placeholder="Please enter your email address" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+              Please enter a valid email address.
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control password" id="password" name="password" placeholder="Please enter your password" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+              Please enter your password.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="city1" class="form-label">District</label>
+          <input type="text" class="form-control city1" id="city1" name="city1" placeholder="Please enter your division name" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please provide a valid division.
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="div1" class="form-label">Division</label>
+          <select class="form-select div1" id="div1" name="div1" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+            <option>Dhaka</option>
+            <option>Chitagong</option>
+            <option>Rajshahi</option>
+            <option>Sylhet</option>
+            <option>Barishal</option>
+            <option>Khulna</option>
+          </select>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="zip1" class="form-label">Zip</label>
+          <input type="text" class="form-control zip1" id="zip1" name="zip1" placeholder="Please enter your zip" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div> 
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-dark" type="submit">Submit form</button>
+        </div>
+  </form>
+  <!-- form end -->
+
+  </div>
+   
+  <!-- js start -->
+   <script  src="js/bootstrap.bundle.min.js"></script>
+   <script  src="js/script.js"></script>
+  <!-- js end  -->
+
+  </body>
+  <!-- body end -->
+
+</html>
